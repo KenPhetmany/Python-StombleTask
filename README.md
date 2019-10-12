@@ -12,7 +12,7 @@
 1. `python manage.py migrate`
 1. `python manage.py createsuperuser`
 1. `python manage.py runserver`
-1. Check its running be going to `localhost:8000`
+1. Confirm server is running on: `localhost:8000`
 
 ### Frontend (stombleappfrontend)
 Prereqs:
