@@ -6,8 +6,8 @@
 
 1. `cd stombleproject`
 1. `pip install pipenv`
-1. `pip envshell`
 1. `pipenv install django`
+1. `pip envshell`
 1. `pipenv install djangorestframework django-cors-headers`
 1. `python manage.py migrate`
 1. `python manage.py createsuperuser`
