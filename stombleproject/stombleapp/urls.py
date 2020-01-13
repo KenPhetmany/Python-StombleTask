@@ -22,7 +22,9 @@ router = routers.DefaultRouter()
 router.register(r'todolists', views.TodolistView, 'todo')
 
 urlpatterns = [
-    path('', admin.site.urls),
+    path('', views.home, name="home"),
+    path('signup/', views.signup, name='signup'),
+    path("accounts/", include("django.contrib.auth.urls")),
     path('admin/', admin.site.urls),
     path('api/', include(router.urls))
 ]

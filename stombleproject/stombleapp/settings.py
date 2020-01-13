@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'todolist.apps.TodolistConfig',
     'todolist',
     'corsheaders',
     'rest_framework'
@@ -60,7 +59,7 @@ ROOT_URLCONF = 'stombleapp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'todolist/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -129,3 +128,7 @@ CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
 
 )
+
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home"
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
