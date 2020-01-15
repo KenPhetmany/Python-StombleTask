@@ -10,7 +10,7 @@ class UserConfig(AppConfig):
 
 
 class ResetConfig(AppConfig):
-    name = 'todolist'
+    name = 'account'
     verbose_name = 'Todolist'
 
     def ready(self):
