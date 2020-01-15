@@ -1,5 +1,5 @@
 from django.contrib import admin
-from . models import Todolist
+from . models import (Todolist)
 
 
 class Todoadmin(admin.ModelAdmin):
